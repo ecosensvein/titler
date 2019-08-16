@@ -1,0 +1,88 @@
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #999;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #fff;
+}
+input {
+  border: none;
+  outline: none;
+}
+textarea {
+  border: none;
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: 10px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  font-family: "Roboto";
+}
+
+main {
+  margin: 40px 0px;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr 1000px 1fr;
+  gap: 20px;
+  h1 {
+    grid-column: 2;
+    font-size: 3rem;
+    margin: 0px;
+    a {
+      color: rgb(165, 174, 181);
+      font-weight: 400;
+      background: rgb(34, 51, 63);
+      padding: 10px 20px;
+    }
+  }
+  div {
+    grid-column: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    span {
+      position: absolute;
+      right: 40px;
+      bottom: 30px;
+      font-size: 6rem;
+      color: rgba(255, 255, 255, 0.08);
+    }
+    textarea {
+      background: rgb(34, 51, 63);
+      resize: none;
+      padding: 10px 20px;
+      color: rgb(234, 234, 234);
+      font-size: 1.4rem;
+    }
+    p {
+      margin: 2px 0px;
+      background: rgb(238, 243, 246);
+      padding: 10px 20px;
+      font-size: 1.8rem;
+      color: rgb(34, 51, 63);
+      cursor: pointer;
+      &:hover {
+        background: rgb(223, 234, 241);
+      }
+    }
+  }
+}

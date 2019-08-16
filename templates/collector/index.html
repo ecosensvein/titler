@@ -1,0 +1,23 @@
+{% extends "collector/base.html" %}
+{% block content %}
+
+<section id="app">
+    <h1><a href="{% url 'collector:index' %}"><b>COLLECTOR</b> app</a></h1>
+    {% verbatim %}
+    <div class="app-textarea-box">
+        <textarea name="log_area" id="log_area" cols="60" :value="log_area" rows="10" readonly></textarea>
+        <span>STATUS</span>
+    </div>
+    <div class="app-textarea-box">
+        <textarea name="urls_area" id="urls_area" cols="60" :value="urls_area" rows="10" readonly></textarea>
+        <span>DATA</span>
+    </div>
+    <div class="app-links">
+        <p v-for="url in urls" v-on:click="sendMessage(url.id)">
+            {{ url.url }}
+        </p>
+    </div>
+    {% endverbatim %}
+</section>
+
+{% endblock %}

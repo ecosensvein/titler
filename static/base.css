@@ -1,0 +1,77 @@
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #999; }
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #fff; }
+
+input {
+  border: none;
+  outline: none; }
+
+textarea {
+  border: none;
+  outline: none; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: 10px;
+  width: 100%;
+  overflow-x: hidden; }
+
+body {
+  position: relative;
+  font-family: "Roboto"; }
+
+main {
+  margin: 40px 0px; }
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr 1000px 1fr;
+  gap: 20px; }
+  #app h1 {
+    grid-column: 2;
+    font-size: 3rem;
+    margin: 0px; }
+    #app h1 a {
+      color: #a5aeb5;
+      font-weight: 400;
+      background: #22333f;
+      padding: 10px 20px; }
+  #app div {
+    grid-column: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column; }
+    #app div span {
+      position: absolute;
+      right: 40px;
+      bottom: 30px;
+      font-size: 6rem;
+      color: rgba(255, 255, 255, 0.08); }
+    #app div textarea {
+      background: #22333f;
+      resize: none;
+      padding: 10px 20px;
+      color: #eaeaea;
+      font-size: 1.4rem; }
+    #app div p {
+      margin: 2px 0px;
+      background: #eef3f6;
+      padding: 10px 20px;
+      font-size: 1.8rem;
+      color: #22333f;
+      cursor: pointer; }
+      #app div p:hover {
+        background: #dfeaf1; }
+
+/*# sourceMappingURL=base.css.map */
