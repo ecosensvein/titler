@@ -13,7 +13,7 @@ chardet==3.0.4
 constantly==15.1.0
 cryptography==2.7
 daphne==1.4.2
-Django==2.2.4
+Django==2.2.10
 hyperlink==19.0.0
 idna==2.8
 importlib-metadata==0.19
