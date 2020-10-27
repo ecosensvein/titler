@@ -11,7 +11,7 @@ cffi==1.12.3
 channels==1.1.6
 chardet==3.0.4
 constantly==15.1.0
-cryptography==2.7
+cryptography==3.2
 daphne==1.4.2
 Django==2.2.4
 hyperlink==19.0.0
